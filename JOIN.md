@@ -44,7 +44,7 @@ SELECT EMP.ENAME,EMP.DEPTNO,DEPT.DNAME FROM EMP,DEPT WHERE EMP.DEPTNO=DEPT.DEPTN
 
 ### ALIAS 사용
 
-테이블에도 ALIAS 사용 가능![image-20210511155725961](C:\Users\hoonveloper\AppData\Roaming\Typora\typora-user-images\image-20210511155725961.png)
+테이블에도 ALIAS 사용 가능![image-20210511155725961](https://user-images.githubusercontent.com/77804950/117796429-0c81db80-b28a-11eb-87f9-39f358759109.png)
 
 
 
@@ -69,7 +69,7 @@ WHERE E.SAL BETWEEN S.LOSAL AND S.HISAL;
 
 ## INNER JOIN 
 
-![image-20210511161248933](C:\Users\hoonveloper\AppData\Roaming\Typora\typora-user-images\image-20210511161248933.png)  
+![image-20210511161248933](https://user-images.githubusercontent.com/77804950/117796506-1efc1500-b28a-11eb-8188-2dc862aa0c73.png)  
 
 
 
@@ -112,7 +112,7 @@ ON E.DEPTNO=D.DEPTNO;
 
 
 
-![image-20210511163522199](C:\Users\hoonveloper\AppData\Roaming\Typora\typora-user-images\image-20210511163522199.png)
+![image-20210511163522199](https://user-images.githubusercontent.com/77804950/117796665-4357f180-b28a-11eb-9126-e95c7c95233a.png)
 
 중복되는 컬럼 DEPTNO에 대해서 달라지게 된다.
 
@@ -141,7 +141,7 @@ QUIZ) A 테이블 컬럼 8개, B테이블 컬럼 3개 NATRUAL 조인 했는데 �
   //괄호 생략 안되고 접두사 사용 불가.
   ```
 
-  ![image-20210511164821027](C:\Users\hoonveloper\AppData\Roaming\Typora\typora-user-images\image-20210511164821027.png)
+  ![image-20210511164821027](https://user-images.githubusercontent.com/77804950/117796789-58cd1b80-b28a-11eb-9f57-f5ebca846f3c.png)
 
 natural 조인과의 차이: 
 
@@ -153,7 +153,7 @@ natural 조인과의 차이:
 
 ## Outer JOIN 
 
-![image-20210511165810028](C:\Users\hoonveloper\AppData\Roaming\Typora\typora-user-images\image-20210511165810028.png)
+![image-20210511165810028](https://user-images.githubusercontent.com/77804950/117796819-61bded00-b28a-11eb-87b5-aa0feab849ac.png)
 
 INNER 조인 INNER 생략 하듯이
 
@@ -165,13 +165,13 @@ LEFT와 RIGHT를 UNION 하면 얻을 수있음
 
 ## CROSS JOIN
 
-![image-20210511171302280](C:\Users\hoonveloper\AppData\Roaming\Typora\typora-user-images\image-20210511171302280.png)
+![image-20210511171302280](https://user-images.githubusercontent.com/77804950/117796876-6e424580-b28a-11eb-8c77-2da2912c2425.png)
 
 
 
 ## QUIZ
 
-![image-20210511171621240](C:\Users\hoonveloper\AppData\Roaming\Typora\typora-user-images\image-20210511171621240.png)
+  ![image-20210511171621240](https://user-images.githubusercontent.com/77804950/117796916-77331700-b28a-11eb-9f71-1aaa84b97097.png)
 
 1. 3
 
@@ -219,7 +219,7 @@ LEFT와 RIGHT를 UNION 하면 얻을 수있음
 
   - 예) FROM EMP E JOIN EMP M
 
-    ![image-20210511174341618](C:\Users\hoonveloper\AppData\Roaming\Typora\typora-user-images\image-20210511174341618.png)
+    ![image-20210511174341618](https://user-images.githubusercontent.com/77804950/117796958-81551580-b28a-11eb-92b8-7db13fc4f67a.png)
 
 ```
 SELECT E.EMPNO, E.ENAME, E.MGRNO, M.NAME
@@ -233,11 +233,13 @@ SELF JOIN의 확장.
 
 ### 순방향 계층
 
-![image-20210511180627889](C:\Users\hoonveloper\AppData\Roaming\Typora\typora-user-images\image-20210511180627889.png)
+![image-20210511180627889](https://user-images.githubusercontent.com/77804950/117797033-92058b80-b28a-11eb-88a9-e6e6c85b0ba0.png)
 
-![image-20210511180827463](C:\Users\hoonveloper\AppData\Roaming\Typora\typora-user-images\image-20210511180827463.png)
+![image-20210511180827463](https://user-images.githubusercontent.com/77804950/117797046-95991280-b28a-11eb-8e18-de473967c225.png)
 
-### 역방향 계층![image-20210511181211405](C:\Users\hoonveloper\AppData\Roaming\Typora\typora-user-images\image-20210511181211405.png)
+### 역방향 계층
+
+![image-20210511181211405](https://user-images.githubusercontent.com/77804950/117797163-afd2f080-b28a-11eb-9068-4fae96f9b50e.png)
 
 역방향 인 경우 LEVEL과 CONNECT_BY_ISLEAF도 반대로 생각해야한다.
 
@@ -245,7 +247,7 @@ SELF JOIN의 확장.
 
 #### UNION ALL (합집합)
 
-![image-20210511183608596](C:\Users\hoonveloper\AppData\Roaming\Typora\typora-user-images\image-20210511183608596.png)
+![image-20210511183608596](https://user-images.githubusercontent.com/77804950/117797210-ba8d8580-b28a-11eb-9a08-06bdbebecb81.png)
 
 팀 ID 가 K06이거나 GK인 선수들 뽑아와서 합집합 K06이고 GK인 선수들 까지 포함
 
@@ -253,11 +255,11 @@ SELF JOIN의 확장.
 
 #### INTERSECT (교집합)
 
-![image-20210511183740333](C:\Users\hoonveloper\AppData\Roaming\Typora\typora-user-images\image-20210511183740333.png)
+![image-20210511183740333](https://user-images.githubusercontent.com/77804950/117797213-bc574900-b28a-11eb-9774-86128fa69ee3.png)
 
 #### MINUS(차집합)
 
-![image-20210511183906828](C:\Users\hoonveloper\AppData\Roaming\Typora\typora-user-images\image-20210511183906828.png)
+![image-20210511183906828](https://user-images.githubusercontent.com/77804950/117797222-be210c80-b28a-11eb-860d-448056a41e98.png)
 
 1. 집합연산자 이용
 2. 조건연산 이용
@@ -266,7 +268,7 @@ SELF JOIN의 확장.
 
 ### 집합 연산과 ALIAS
 
-![image-20210511184436850](C:\Users\hoonveloper\AppData\Roaming\Typora\typora-user-images\image-20210511184436850.png)
+![image-20210511184436850](https://user-images.githubusercontent.com/77804950/117797228-bfead000-b28a-11eb-80d7-a5f6570da07e.png)
 
 1. 컬럼에 Alias 줘서 orderby 할 때 사용 -> O
 2. 컬럼에 Alias 줬지만 orderby할 때 별칭 사용 x -> O
