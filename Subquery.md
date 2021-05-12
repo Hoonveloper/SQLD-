@@ -6,7 +6,8 @@
 
 ## 단일행 서브쿼리
 
-![image-20210512165226523](C:\Users\hoonveloper\AppData\Roaming\Typora\typora-user-images\image-20210512165226523.png)
+![image-20210512165226523](https://user-images.githubusercontent.com/77804950/117959194-b9298f00-b356-11eb-9f35-d80387939562.png)
+
 
 ![image-20210512165400475](https://user-images.githubusercontent.com/77804950/117957883-731ffb80-b355-11eb-88b2-507375cae225.png)
 
